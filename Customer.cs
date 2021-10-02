@@ -17,6 +17,7 @@ namespace MoodAnalyser058Batch
         /// The identifier.
         public int Id
         {
+            //getter,setter values
             get;set;
         }
         public string Name
@@ -26,19 +27,24 @@ namespace MoodAnalyser058Batch
         /// <summary>
         /// Initializes the new instance of the <see cref="cref="Customer"/> class.
         /// </summary>
+        //created non parameterised constructor.
         public Customer()
         {
             this.Id = -1;
             this.Name = null;
         }
+
+        //created a parameterised constructor.
         public Customer(int Id, string Name)
         {
+            //instantiating the parameter values.
             this.Id = Id;
             this.Name = Name;
         }
 
 
         //Prints the Identifier.
+        //Created the two methods
         public void PrintId()
         {
             Console.WriteLine("Id is {0}" + this.Id);
